@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "679d52754b87df3b7279d5d9",
+    "name": "Introduction to Node.js",
+    "speaker": "John Doe"
+  },
+  {
+    "_id": "679d52ca4b87df3b7279d5da",
+    "name": "Introduction to MongoDB",
+    "speaker": "Jane Doe"
+  }
+]
