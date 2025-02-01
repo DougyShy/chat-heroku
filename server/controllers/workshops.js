@@ -1,4 +1,5 @@
-const Workshop = require("mongoose").model("Workshop");
+import mongoose from "mongoose";
+const Workshop = mongoose.model("Workshop");
 
 // function getWorkshops(req, res, next) {
 //   Workshop.find().exec((error, items) => {
@@ -20,6 +21,6 @@ const getWorkshops = async (req, res) => {
   }
 };
 
-module.exports = {
+export default {
   getWorkshops,
 };

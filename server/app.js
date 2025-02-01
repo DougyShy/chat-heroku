@@ -1,9 +1,9 @@
-require("./data/init");
+import "./data/init.js"; // instead of require
 
-const path = require("path");
-const express = require("express");
-const cors = require("cors");
-const workshopsRouter = require("./routes/workshops");
+import express from "express";
+import path from "path";
+import cors from "cors";
+import workshopsRouter from "./routes/workshops.js";
 
 const app = express();
 
@@ -41,4 +41,4 @@ app.listen(PORT, (error) => {
   console.log(`Server running on port ${PORT}`);
 });
 
-module.exports = app;
+export default app;

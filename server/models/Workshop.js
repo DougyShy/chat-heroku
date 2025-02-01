@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"; // ES Module syntax
 
 const workshopSchema = new mongoose.Schema({
   name: {
