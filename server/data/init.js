@@ -1,4 +1,6 @@
 import mongoose from "mongoose"; // Correct import for ES Modules
+import dotenv from "dotenv";
+dotenv.config();
 
 mongoose.set("returnOriginal", false);
 
@@ -11,6 +13,8 @@ const DB_HOST =
 const DB_NAME = "techDB";
 
 //const connectionStr = `mongodb://${DB_HOST}/${DB_NAME}`;
+const dbURI = process.env.MONGODB_URI;
+console.log(dbURI);
 const connectionStr = `${DB_HOST}/${DB_NAME}`;
 
 console.log(connectionStr);
